@@ -9,5 +9,5 @@ respawn
 respawn limit 2 10
 
 script
-  exec <%= @etcd_cmd %> >> <%= @config.logfile %>
+  exec <%= @etcd_cmd %> >> <%= @config.logfile %> 2>&1
 end script
